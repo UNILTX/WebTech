@@ -3,8 +3,8 @@ h1 {border-style: solid; border-width: 18px;border-color:peachpuff;}
 p {font-family: "Courier New", Courier, monospace; font-size:14pt; text-indent:15pt}
 img {float:right;}
 hr {width:70%; color:coral; height: 6px; background-color:coral;}
-span {font: weight 90px;; font-style:italic}
-.redb {border:6px dotted black }
-div:hover{transform: scale(1.2)}
-div_1 {background-color:yellow}
+span {font: weight 90px;; font-style:italic;}
+.redb {border:6px dotted black; }
+div:hover{transform: scale(1.2);}
+div_1 {background-color:yellow;}
 
