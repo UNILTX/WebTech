@@ -5,6 +5,6 @@ img {float:right;}
 hr {width:70%; color:coral; height: 6px; background-color:coral;}
 span {font: weight 90px;; font-style:italic}
 .redb {border:6px dotted black }
-b:hover{transform: scale(1.2)}
+b::hover{transform: scale(1.2)}
 
 
