@@ -10,4 +10,4 @@ a:hover{font-size: 120%;}
 .div_2{background-color:pink;}
 .div_3{background-color:tan;}
 h2+p::first-letter{font-size: 130%;}
-.mys{text-shadow: steelblue;}
+.mys{text-shadow::3px 3px 2px steelblue;}
