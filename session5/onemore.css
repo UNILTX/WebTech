@@ -11,4 +11,4 @@ a:hover{font-size: 120%;}
 .div_3{background-color:tan;}
 h2+p::first-letter{font-size: 130%;}
 .mys {text-shadow:3px 3px 2px steelblue;}
-ol{font-family: "Courier New", Courier, monospace; font-size:11pt; text-indent:15pt}
+ol{font-family:'Tangerine', serif; font-size:13px;}
