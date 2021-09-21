@@ -13,6 +13,6 @@ a:hover{font-size: 120%;}
 h2+p::first-letter{font-size: 130%;}
 .mys {text-shadow:3px 3px 2px steelblue;}
 ol{font-family: "Courier New", Courier, monospace; font-size:12pt; text-indent:15pt}
-.nav { background-color:lightgoldenrodyellow;overflow: hidden;width: 30px;height: 16px;}
-.nav a{float:left;color:plum; padding: 15px 11px;text-decoration: none;font-size: 17px;}
+.nav { background-color:lightgoldenrodyellow;overflow: hidden;width: 30px;height: 16px;position: relative;}
+.nav a{float:left;color:plum; padding: 15px 1px;text-decoration: none;font-size: 17px;}
 .nav a:hover {background-color: #ddd;color: black;}
