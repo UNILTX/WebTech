@@ -5,7 +5,7 @@ p {font-family: "Courier New", Courier, monospace; font-size:14pt; text-indent:1
 img {float:right;}
 hr {width:70%; color:coral; height: 6px; background-color:coral;}
 span {font: weight 90px;; font-style:italic;}
-.redb {border:6px dotted black; }
+.redb {border:3px dotted black; }
 a:hover{font-size: 120%;}
 .div_1{background-color: wheat;}
 .div_2{background-color:pink;}
