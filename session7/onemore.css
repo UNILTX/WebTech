@@ -13,3 +13,7 @@ a:hover{font-size: 120%;}
 h2+p::first-letter{font-size: 130%;}
 .mys {text-shadow:3px 3px 2px steelblue;}
 ol{font-family: "Courier New", Courier, monospace; font-size:12pt; text-indent:15pt}
+.topnav { background-color:lightgoldenrodyellow;overflow: hidden;}
+.topnav a{float:center;color:plum;text-align: center; padding: 14px 16px;text-decoration: none;font-size: 17px;}
+
+  
