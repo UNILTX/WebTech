@@ -15,39 +15,5 @@ ol{font-family: "Courier New", Courier, monospace; font-size:12pt; text-indent:1
 .nav{ background-color:lightgoldenrodyellow;overflow: hidden;position: relative;}
 .nav a{float:left;color:plum; padding: 20px 15px;text-decoration: none;font-size: 17px;}
 .nav a:hover {background-color: #ddd;color: black;}
-.dropdown_1column{ 
-    margin: 0px auto;
-    float: left;
-    position: absolute;
-    left: -999em;
-    text-align: left;
-    border: 1px solid #066591;
-    border-top: none;
-    background: #F4F4F4;
-    width: 140px;
-}
-#menu li:hover div a { /* 下拉菜单文字颜色*/
-font-size:12px
-;color:#444;
-}
-
-#menu li:hover div a:hover{color:#21910e;} /*下拉带单鼠标停留颜色*/
-
-#menu li ul {
-list-style:none;padding:10px 5px;
-margin:0;
-}
-#menu li ul li {
-font-size:12px;
-line-height:26px;
-position:relative;
-padding:0;margin:0;
-float:none;
-text-align:left;
-width:130px;
-}
-#menu li ul li:hover {
-background:none;
-border:none;padding:0;
-margin:0;
-}
+.dropdown_1column{ margin: 0px auto; float: left;position: absolute;left: -999em;text-align: left; border: 1px solid #066591;border-top: none;
+                background: #F4F4F4;width: 140px;}
