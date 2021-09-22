@@ -18,3 +18,4 @@ ol{font-family: "Courier New", Courier, monospace; font-size:12pt; text-indent:1
 .navbar .navmenu {font-size:16px; text-align: center;border:none; outline: none;color:plum; padding: 14px 16px;font-family:inherit;margin:0;}
 .navbarcontent {display: none;position: absolute;background-color:white;z-index: 1;}
 .navbarcontent a {float: left; color: grey; text-decoration: none;}
+.navbar:hover .navbarcontent {display: block;}
