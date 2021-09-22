@@ -15,7 +15,7 @@ ol{font-family: "Courier New", Courier, monospace; font-size:12pt; text-indent:1
 .nav {overflow: hidden;background-color:salmon;padding-left: 33.5%;}
 .nav a{float: left;font-size: 16px;color: white;text-align: center;padding: 14px 16px;text-decoration: none;}
 .navbar {float:left;overflow: hidden;}
-.navbar .navmenu {font-size:16px; text-align: center;border:none; outline: none; padding: 14px 16px;margin:0;}
+.navbar .navmenu {font-size:16px; text-align: center;border:none; outline: none; padding: 14px 16px;font-family:inherit;margin:0;}
 .navbarcontent {display: none;position: absolute;background-color:white;z-index: 1;}
 .navbarcontent a {float: left; color: grey; text-decoration: none;}
 .navbar:hover .navbarcontent {display: block;}
