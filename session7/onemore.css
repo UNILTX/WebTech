@@ -21,3 +21,4 @@ background: #F4F4F4;width: 140px;}
 .nav li ul{font-size:12px;line-height:26px;position:relative;padding:0;margin:0;float:none;
 text-align:left;width:130px;}
 .nav li ul hover {background:none;border:none;padding:0;margin:0;}
+.nav>div{position: absolute;top: 0;right: 0;}
