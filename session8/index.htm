@@ -9,18 +9,20 @@
 	
 </head>
 <body>
-	<form>
+	<form method="post" action="http://wtspring13sec2.babson.edu/gordon/mailer.php">
 	<h1>MIS3690 Student Survey</h1>	
 	<p>Please complete the following survey.  You must answer each question.  When you are done,
 	    please click on the Submit button.</p>
 		<p>First Name<input type= "text" name="lastname" maxlength="100" value="" />    Last Name<input type= "text" name="lastname" maxlength="100" value="" /></p>
 		<p>Gender:  Male <input type="radio" name="gender" value="male" />  Female <input type="radio" name="gender" value="female" checked="checked" /></p>
 		<p>What grade do you expect to receive <select name="D1"><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option></select></p>
-		<p>Which topics did you find to be fun (Select all that apply)<br />  
+		<table>
+		<p><rowspan 4>Which topics did you find to be fun (Select all that apply)<br /></rowspan>
 			<input type="checkbox" name="I" value="Image" /> Image<br />
 			<input type="checkbox" name="c" value="CSS" /> CSS <br />
 			<input type="checkbox" name="T" value="Tables" /> Tables<br />
 			<input type="checkbox" name="F" value="Forms" /> Forms</p>
+		</table>
 			<p>Please add any comments you have</p>
 			<textarea name="comments" rows="5" cols="29"></textarea><br/>
         <p><input type="submit" value="Submit" name="Submit"  /><input type="reset" value="Reset" name="Reset" /></p>
