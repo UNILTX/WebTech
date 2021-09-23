@@ -17,11 +17,18 @@
 		<p>Gender:  Male <input type="radio" name="gender" value="male" />  Female <input type="radio" name="gender" value="female" checked="checked" /></p>
 		<p>What grade do you expect to receive <select name="D1"><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option></select></p>
 		<table>
-		<p><rowspan 4>Which topics did you find to be fun (Select all that apply)<br /></rowspan>
-			<input type="checkbox" name="I" value="Image" /> Image<br />
-			<input type="checkbox" name="c" value="CSS" /> CSS <br />
-			<input type="checkbox" name="T" value="Tables" /> Tables<br />
-			<input type="checkbox" name="F" value="Forms" /> Forms</p>
+		<tr>
+			<td rowspan 4>Which topics did you find to be fun (Select all that apply)<br /></td>
+			<td><input type="checkbox" name="I" value="Image" /> Image<br /></td>
+			<tr>
+			<td><input type="checkbox" name="c" value="CSS" /> CSS <br /></td>
+			</tr>
+		    <tr>
+			</td><input type="checkbox" name="T" value="Tables" /> Tables<br /></td>
+		    </tr>
+		    <tr>
+			</td><input type="checkbox" name="F" value="Forms" /> Forms</p></td>
+			</tr>
 		</table>
 			<p>Please add any comments you have</p>
 			<textarea name="comments" rows="5" cols="29"></textarea><br/>
