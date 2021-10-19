@@ -6,31 +6,68 @@
 	<style>
 	td {padding-right:40px}
 	</style>
+
+<script>
+function processForm()
+	{
+if (document.getElementById("firstname").value == "")
+	{
+		alert("First name is required");
+		document.getElementById("firstname").focus();
+	}
+	else if (document.getElementById("lastname").value == "")
+	{
+		alert("Last name is required");
+		document.getElementById("lastname").focus();
+	}
+	else if (document.getElementById("a1").checked == false && document.getElementById("a2").checked == false && document.getElementById("a3").checked == false && document.getElementById("a4").checked == false)
+	{
+		alert("You must have had fun with at least one topic");
+	}
+	else if (document.getElementById("gradyear").value == "")
+	{
+		alert("Graduation Year must be entered");
+		document.getElementById("gradyear").focus();
+	}
+	else if (document.getElementById("gradyear").value < 2016 || document.getElementById("grad").value > 2020)
+	{
+		alert("Graduation Year must be between 2016 and 2020, including those years");
+		document.getElementById("gradyear").focus();
+	}
+	else {
+		return true;
+	}
+		return false;
+	}
+
+
+</script>
 	
 </head>
 <body>
-	<form action="http://wtspring13sec2.babson.edu/gordon/mailer.php"">
+	<form method="post" action="mailer.php" onsubmit="return processForm()"> 
 	<h1>MIS3690 Student Survey</h1>	
 	<p>Please complete the following survey.  You must answer each question.  When you are done,
 	    please click on the Submit button.</p>
-		<p>First Name<input type= "text" name="lastname" maxlength="100" value="" />    Last Name<input type= "text" name="lastname" maxlength="100" value="" /></p>
+		<p>First Name<input type= "text" name="firstname" maxlength="100" value="" id="firstname" />    Last Name<input type= "text" name="lastname" maxlength="100" value="" id="lastname"/></p>
 		<p>Gender:  Male <input type="radio" name="gender" value="male" />  Female <input type="radio" name="gender" value="female" checked="checked" /></p>
 		<p>What grade do you expect to receive <select name="Your expected grade"><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option></select></p>
 	<table>
 		<tr>
 			<td rowspan="4">Which topics did you find to be fun?</td>
-			<td><input type="checkbox" name="I" value="Images"/>Images</td>
+			<td><input type="checkbox" name="I" value="Images" id="a1"/>Images</td>
 		</tr>
 		<tr>
-			<td><input type="checkbox" name="C" value="CSS"/>CSS</td>
+			<td><input type="checkbox" name="C" value="CSS" id="a2"/>CSS</td>
 		</tr>
 		<tr>
-			<td><input type="checkbox" name="T" value="Tables"/>Tables</td>
+			<td><input type="checkbox" name="T" value="Tables" id="a3"/>Tables</td>
 		</tr>
 		<tr>
-			<td><input type="checkbox" name="F" value="Forms"/>Forms</td>
+			<td><input type="checkbox" name="F" value="Forms" id="a4"/>Forms</td>
 			</tr>
 	</table>
+<p> When are you graduating? <input type="text" name="graduation" maxlength="4" id="gradyear"></p>
 <p>Please add any comments you have</p>
 <textarea name="comments" rows="5" cols="29"></textarea><br/>
 <p><input type="submit" value="Submit" name="Submit"  />     <input type="reset" value="Reset" name="Reset" /></p>
