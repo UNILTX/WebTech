@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       button{position:absolute;top:0px;left:0px"}
+    </style>
+        
+    <script>
+        var c = new Array("Click Me", "Move Me", "Click Here", "Button", "Next");
+    function clickme()
+	{    
+		var click1=Math.floor(Math.random()*c.length);
+        var clickleft=Math.floor(Math.random()*501)+'px';
+        var clicktop=Math.floor(Math.random()*501)+'px'
+		document.getElementById("bu").innerHTML=c[click1];
+        document.getElementById("bu").style.left=clickleft;
+        document.getElementById("bu").style.top=clicktop;
+	}
+
+    
+    </script>
+
+</head>
+<body>
+       <!-- Your HTML goes here -->
+       <button onclick="clickme()" id="bu">Click Me</button>
+</body>
+</html>
