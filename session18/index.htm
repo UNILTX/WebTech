@@ -16,7 +16,7 @@
         var d=true;
         function drawShape(){
           // get the canvas element using the DOM
-		var canvas = document.getElementById('tutorial');
+		var canvas = document.getElementById('dots');
           // fill the page with the canvas
           canvas.width = 500;
           canvas.height = 500;
@@ -28,27 +28,14 @@
         
         function canvasAnimate()
         {
-            if (d==true)
-                {
                     ctx.fillStyle=colorList[Math.floor(Math.random()*colorList.length)]
-                    rand1=Math.floor(Math.random()*450);
-                    rand2=Math.floor(Math.random()*450);
-                   ctx.fillRect(rand1,rand2,50,50);
-                    d=false;
-                }
-            else
-                {
-                    rand1=Math.floor(Math.random()*450)
-                    rand2=Math.floor(Math.random()*450)
-                    ctx.clearRect(rand1,rand2,50,50)
-                    d=true;
-                }
+                    ctx.arc(30,35,50,0,Math.PI*2,true);
             setTimeout("canvasAnimate()",200);
 		}
 	</script>
   </head>
 
   <body onload="drawShape()">
-     <canvas id="tutorial"></canvas>
+     <canvas id="dots"></canvas>
   </body>
 </html>
