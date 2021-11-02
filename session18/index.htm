@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+
+<html lang="en"> 
+
+  <head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+	<title>Canvas Example</title>
+
+	<style>
+        canvas { border: 1px solid black; width:500px; height:500px}
+	</style>
+	
+	<script>
+        var ctx;
+        var d=true;
+        function drawShape(){
+          // get the canvas element using the DOM
+		var canvas = document.getElementById('tutorial');
+          // fill the page with the canvas
+          canvas.width = 500;
+          canvas.height = 500;
+          // use getContext to use the canvas for drawing
+        ctx = canvas.getContext('2d');
+        colorList = new Array("pink","yellow","purple","orange")
+        canvasAnimate();
+        }
+        
+        function canvasAnimate()
+        {
+            if (d==true)
+                {
+                    ctx.fillStyle=colorList[Math.floor(Math.random()*colorList.length)]
+                    rand1=Math.floor(Math.random()*450);
+                    rand2=Math.floor(Math.random()*450);
+                   ctx.fillRect(rand1,rand2,50,50);
+                    d=false;
+                }
+            else
+                {
+                    rand1=Math.floor(Math.random()*450)
+                    rand2=Math.floor(Math.random()*450)
+                    ctx.clearRect(rand1,rand2,50,50)
+                    d=true;
+                }
+            setTimeout("canvasAnimate()",200);
+		}
+	</script>
+  </head>
+
+  <body onload="drawShape()">
+     <canvas id="tutorial"></canvas>
+  </body>
+</html>

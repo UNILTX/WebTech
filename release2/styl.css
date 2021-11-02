@@ -1,0 +1,98 @@
+body {font-family: 'Playfair Display', serif;background-color: #ebeeeb;}
+h2 {text-align:center; font-size:25px; color: orange;}
+p {font-size:13pt; text-indent:15pt}
+
+
+/* Layout */
+.lay {position: relative;margin: 0 auto;width: 950px;}
+
+/* style for the logo */
+.logo{margin-left: 10px;padding-top: 45px;float:left;font-family: 'Cookie', cursive;font-size: 46px; color: darksalmon;}
+
+/* style for navigation bar */
+.nav {float:right;overflow: hidden;background-color:salmon;}
+.nav a{float: left; font-size: 16px;color: white;text-align: center;padding: 16px 30px;}
+.navbar {float:left;overflow: hidden;}
+.navbarcontent {display: none;position:fixed;background-color:white;z-index: 99;}
+.navbarcontent a {float: left; color: grey; text-decoration: none;}
+.navbar:hover .navbarcontent {display: block}
+.nav a:hover{color:lemonchiffon;}
+.navbarcontent a:hover{color:salmon;}
+.button{background-color: salmon;border:none; outline: none;font-family:inherit;margin:0; }
+
+
+/* Index */
+.shang{padding-top: 70px; width: 920px; padding-left:30px;height:400px;} 
+.p2{ font-family:'Indie Flower', cursive;font-size: 16pt;line-height: 1cm;color:saddlebrown;text-indent:none;}
+hr{border-style: dotted;size: 18pt;}
+h3{font-size: 28pt;color:maroon;font-family: 'Indie Flower', cursive;text-align: center;}
+iframe{border-style: none;}
+
+/* history */
+
+.his{width: 930px; padding-left: 40px;padding-top: 25px;}
+.his td{font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-size: 17px;color:saddlebrown;width:fit-content;}
+.his1{font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;vertical-align: top;}
+.his img{width: 530px; padding-inline: 5px;}
+
+/* culture */
+audio{padding-left: 38px;}
+.cul {width: 900px;padding-left:30px;padding-top: 25px;}
+.cul h1{font-size: 24pt;color:maroon;text-align:center;font-family:'Indie Flower', cursive;}
+.cul p{font-family:'Indie Flower', cursive;font-size: 16pt;line-height: 1cm;color:saddlebrown;text-indent:none;}
+
+/* Accomodation */
+.acc img{width: 500px; height: 800px; padding-left: 15px; padding-top: 30px;}
+.acc {padding-top: 20px;}
+.acc hr{width: 150px;}
+.acc h1{font-size: 18pt;color:maroon;text-align:center;font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
+.acc p{font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-size: 13pt;line-height: 1cm;color:saddlebrown;text-indent:2px; text-align: justify;}
+
+/* places */
+.tog {padding-top: 20px;padding-left: 20px; width: 900px;}
+.tog p{font-family:'Indie Flower', cursive;font-size: 15pt;line-height: 1cm;color:saddlebrown;text-indent:2px; text-align: left;}
+.tog span{color:orange}
+.tog img{width:550px;padding-left: 170px;}
+
+/* bund,xintiandi,jinantemple */
+.pla img{width: 500px; height: 600px; padding-left: 15px; padding-top: 30px;}
+.pla {padding-top: 20px;}
+.pla hr{width: 150px;}
+.pla h1{font-size: 18pt;color:maroon;text-align:center;font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
+.pla p{font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-size: 13pt;line-height: 1cm;color:saddlebrown;text-indent:2px; text-align: justify;}
+.pla span{color:orange}
+
+/* food */
+.foo {padding-top: 20px;padding-left: 20px; width: 900px;}
+.foo p{font-family:'Indie Flower', cursive;font-size: 15pt;line-height: 1cm;color:saddlebrown;text-indent:2px; text-align: left;}
+.foo span{color:orange}
+.foo img{width:350px;}
+
+/* snack cusine */
+.sna {padding-top: 20px;padding-left: 20px; width: 900px;}
+.sna p{font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-size: 13pt;line-height: 1cm;color:saddlebrown;text-indent:2px; text-align: justify;}
+.sna ol{font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-size: 13pt;line-height: 1cm;color:saddlebrown;text-indent:2px; text-align: justify;}
+.dim{width:550px;padding-left: 170px;}
+.sna span{font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-size: 8pt;color: sienna;padding-left: 360px;}
+.aa{font-size: 16pt;line-height: 1cm;color:lightcoral;list-style-type: none;}
+strong{color:orange}
+.juan{width:300px;height: 300px;}
+.sna li{list-style-type: none;}
+img{width: 500px;height: 400px;}
+
+/* About Me */
+.mypic {
+    float:none;
+    margin-right: 20px;
+    padding-top: 100px;
+    padding-left: 15px;
+}
+
+.abou{font-family: 'Indie Flower', cursive;line-height: 0.7cm;color:saddlebrown;}
+
+/* CONTACT */
+.feedback{align-items: center;text-align: center;}
+.one-fourth{align-items: center;text-align: center;}
+
+
+ 
