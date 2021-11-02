@@ -8,33 +8,47 @@
         canvas { border: 1px solid black; width:800px; height:800px}
 	</style>
 	
-<script>
-    var c1;
-    function drawShape(){
-        var canvas1= document.getElementById("canvas1");
-        canvas1.width  = 800;
-        canvas1.height = 800;
-        var c1 = canvas1.getContext('2d');
-        var radius = 50;
-        var x = radius + Math.random() * ( 800 - radius * 2 );
-        var y = radius + Math.random() * ( 800 - radius * 2 );
-        var dx 	= (Math.random() - 0.5) * 2;
-        var dy 	= (Math.random() - 0.5) * 2;
-        canvasAnimate();}
+    <script>
 
-    function canvasAnimate() {
-  	    if(x + radius > 800 || x - radius < 0 ) {dx = -dx;}
-  	    if(y + radius > 800|| y - radius < 0 ) {dy = -dy;}
-  	    x += dx;
-  	    y += dy;
-  	    c1.beginPath();
-  	    c1.arc(x,y,50,0, Math.PI*2, false);
-  	    c1.stroke();}
+    function draw()
+{          
+    var drawtree = function (ctx,startx,starty,length,angle,depth,branchWidth){        var rand=Math.random,
+        n_length,n_angle,n_depth,maxbranch=4,
+        endx,endy,maxangle=2 * Math.PI / 4;        var subbranch;
+        ctx.beginPath();
+        ctx.moveTo(startx,starty);
+        endx=startx + length * Math.cos(angle);
+        endy=starty + length * Math.sin(angle);
+        ctx.lineCap='round';
+        ctx.lineWidth=branchWidth;
+        ctx.lineTo(endx,endy);        if(depth<=2 ){       
+            ctx.strokeStyle= 'rgb(0,' + (((rand() * 64) +128) >>0) + ',0)';
+        }        else{     
+            ctx.strokeStyle= 'rgb(0,' + (((rand() * 64) +64) >>0) + ',50,25)';
+        }
+        ctx.stroke();
+        n_depth = depth-1; 
+        if(!n_depth){            return;
+        }
+        subbranch= (rand() * (maxbranch-1)) + 1;
+        branchWidth *=0.5; 
+        for(var i=0;i<subbranch;i++){
+            n_angle = angle +rand() * maxangle -maxangle *0.5;
+            n_length = length * (0.5 + rand() *0.5);
+            setTimeout(function (){
+                drawtree(ctx,endx,endy,n_length,n_angle,n_depth,branchWidth);                return;
+            },500)
+        }
+    }    
+    var canvas=document.getElementById('d1');    
+    var ctx= canvas.getContext('2d'); 
+    drawtree(ctx,300,470,100,-Math.PI / 2, 12, 12);
 
-</script>
-</head>
-
-<body onload="drawShape()">
-    <canvas id="canvas1"></canvas>
-</body>
+    </script>
+   
+</head>    
+<body>
+    <canvas id='d1' width="600" height="500" style="border:dashed 2px #ccc;"></canvas>
+    
+</body> 
 </html>
