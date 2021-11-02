@@ -1,40 +1,40 @@
-
 <!DOCTYPE html>
-
-<html lang="en"> 
-
-  <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
-	<title>session18</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <style>
+        canvas { border: 1px solid black; width:800px; height:800px}
+	</style>
+	
 <script>
-    var canvas1= document.getElementById("canvas1");
-    canvas1.width   = 800;
-    canvas1.height  = 800;
-    var c1 = canvas1.getContext( '2d' );
-    var radius = 50;
-    var x = radius + Math.random() * ( 800 - radius * 2 );
-    var y = radius + Math.random() * ( 800 - radius * 2 );
-    var dx 	= (Math.random() - 0.5) * 2;
-    var dy 	= (Math.random() - 0.5) * 2;
-    function drawShape() {
-    requestAnimationFrame( drawShape)
-  	c3.clearRect( 0, 0 , 800, 800 );
-  	if(x + radius > 800 || x - radius < 0 ) {dx = -dx;}
-  	if(y + radius > 800|| y - radius < 0 ) {dy = -dy;}
-  	x += dx;
-  	y += dy;
-  	c3.beginPath();
-  	c3.arc(x,y,50,0, Math.PI*2, false);
-  	c3.stroke();}
+    var c1;
+    function drawShape(){
+        var canvas1= document.getElementById("canvas1");
+        canvas1.width  = 800;
+        canvas1.height = 800;
+        var c1 = canvas1.getContext('2d');
+        var radius = 50;
+        var x = radius + Math.random() * ( 800 - radius * 2 );
+        var y = radius + Math.random() * ( 800 - radius * 2 );
+        var dx 	= (Math.random() - 0.5) * 2;
+        var dy 	= (Math.random() - 0.5) * 2;
+        canvasAnimate();}
 
-    drawShape();
+    function canvasAnimate() {
+  	    if(x + radius > 800 || x - radius < 0 ) {dx = -dx;}
+  	    if(y + radius > 800|| y - radius < 0 ) {dy = -dy;}
+  	    x += dx;
+  	    y += dy;
+  	    c1.beginPath();
+  	    c1.arc(x,y,50,0, Math.PI*2, false);
+  	    c1.stroke();}
 
+</script>
+</head>
 
-
-	</script>
-  </head>
-
-  <body onload="drawShape()">
-     <canvas id="canvas1"></canvas>
-  </body>
+<body onload="drawShape()">
+    <canvas id="canvas1"></canvas>
+</body>
 </html>
