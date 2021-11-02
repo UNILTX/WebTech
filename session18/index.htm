@@ -6,10 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Session18</title>      
 
-    <style>
-        canvas { border: 1px solid black; width:1000px; height:800px}
-	</style>
-	
 	<script>
         var ctx;
         var d=true;
@@ -17,11 +13,11 @@
           // get the canvas element using the DOM
 		var canvas = document.getElementById('t');
           // fill the page with the canvas
-          canvas.width = 500;
-          canvas.height = 500;
+          canvas.width = 2000;
+          canvas.height = 2000;
           // use getContext to use the canvas for drawing
         ctx = canvas.getContext('2d');
-        colorList = new Array("pink","violet","yellow","purple","orange")
+        colorList = new Array("pink","violet","yellow","purple","orange","green","red","black")
         canvasAnimate();
         }
         
@@ -30,8 +26,8 @@
             if (d==true)
                 {
                     ctx.strokeStyle=colorList[Math.floor(Math.random()*colorList.length)]
-                    rand1=Math.floor(Math.random()*450);
-                    rand2=Math.floor(Math.random()*450);
+                    rand1=Math.floor(Math.random()*1800);
+                    rand2=Math.floor(Math.random()*1800);
                     ctx.beginPath();
                     ctx.arc(rand1,rand2,10, 0, 2 * Math.PI);
                     ctx.stroke();
@@ -46,9 +42,10 @@
 	</script>
   </head>
 
-  <body onload="draw()">
+  <body>
      <canvas id="t">
      </canvas>
+     <button onclick="draw()" style="width: 80pt;">Click to see colorful bubbles!</button>
   </body>
 </html>
   </body>
