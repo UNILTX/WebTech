@@ -5,33 +5,55 @@
 
   <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
-	<title>Canvas Example</title>
+	<title>session18</title>
 
 	<style>
-        canvas { border: 1px solid black; width:500px; height:500px}
+        canvas { border: 1px solid black; width:800px; height:800px}
 	</style>
 	
 	<script>
-        var ctx;
-        var d=true;
-        function drawShape(){
-          // get the canvas element using the DOM
-		var canvas = document.getElementById('dots');
-          // fill the page with the canvas
-          canvas.width = 500;
-          canvas.height = 500;
-          // use getContext to use the canvas for drawing
-        ctx = canvas.getContext('2d');
-        colorList = new Array("pink","yellow","purple","orange")
-        canvasAnimate();
-        }
-        
-        function canvasAnimate()
-        {
-                    ctx.fillStyle=colorList[Math.floor(Math.random()*colorList.length)]
-                    ctx.arc(30,35,50,0,Math.PI*2,true);
-            setTimeout("canvasAnimate()",200);
-		}
+    var canvas3 = document.getElementById("dots");
+    canvas3.width   = 800;
+    canvas3.height  = 800;
+
+    var c3 = canvas3.getContext( '2d' );
+
+// Radius
+    var radius = 50;
+
+// Starting Position
+    var x 	= radius + Math.random() * ( 200 - radius * 2 );
+    var y 	= radius + Math.random() * ( 200 - radius * 2 );
+
+// Speed 
+    var dx 	= (Math.random() - 0.5) * 2;
+    var dy 	= (Math.random() - 0.5) * 2;
+
+    function drawShape() {
+
+  	requestAnimationFrame( animate3 );
+
+  	c3.clearRect( 0, 0 , 200, 200 );
+ 
+  	if( x + radius > 200 || x - radius < 0  ) {
+
+    		dx = -dx;
+  	}
+
+  	if(  y + radius > 200 || y - radius < 0 ) {
+
+    		dy = -dy;
+  	}
+
+  	x += dx;
+  	y += dy;
+
+  	c3.beginPath();
+  	c3.arc( x, y,  50, 0, Math.PI * 2, false  );
+  	c3.stroke();
+}
+
+animate3();
 	</script>
   </head>
 
