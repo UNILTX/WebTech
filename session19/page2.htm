@@ -23,9 +23,8 @@
 
         function lastvisit()
 	{   
-        date=new Date()
-        
-
+        var lastvisitdate=new Date()
+        setCookie("lastvisittime",lastvisitdate)
 	}
 
     function readCookie(cName)
@@ -33,8 +32,8 @@
         c=document.cookie  //Gets all cookies in the document
         var s=c.indexOf(cName) //s is the index of the start of the desired cookie
         if (s==-1) return null;
-        var cs=c.substring(s) //Cut the cookie string at the start of the desired cookie
-        var e=cs.indexOf(";") //e is the index of the end of the desired cookie
+        var cs=c.substring(s) 
+        var e=cs.indexOf(";") 
         if (e != -1) {
         cs = cs.substring(0,e)
         }
