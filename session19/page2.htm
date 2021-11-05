@@ -21,7 +21,7 @@
         ";expires="+ expireDate.toGMTString() 
         }
 
-        function lastvisit()
+    function lastvisit()
 	{   
         var lastvisitdate=new Date()
         setCookie("lastvisittime",lastvisitdate)
@@ -46,7 +46,7 @@
 
 
 </head>
-<body>
+<body onload="lastvisit()">
     
 </body>
 </html>
