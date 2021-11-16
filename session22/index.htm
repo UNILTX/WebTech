@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en"> 
+
+  <head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+	<title>Page title goes here</title>
+
+	<style>
+	/* Your styles go here */
+	</style>
+	
+	<script src="https://code.jquery.com/jquery.min.js"></script>
+	<script>
+	$(function(){
+		$("button#hid").click(function(){
+			$("tr:odd").hide()
+		})
+		$("tr").click(function(){
+		$(this).fadeOut(3000) })
+
+		$("button#sho").click(function(){
+			$("tr:odd").show()
+			$("tr:odd").css("background-color","yellow")
+			
+		})
+
+	});
+	/* Your additional JavaScript goes here */
+	</script>
+  </head>
+
+
+  <body>
+	<!-- Your HTML goes here -->
+	<table>
+		<tr>
+		<td colspan="3" >table row 1</td>
+		</tr><tr>
+		<td>table row 2</td>
+		</tr>
+		<tr>
+		<td>table row 3</td>
+		</tr><tr>
+		<td>table row 4</td>
+		</tr>
+	</table>
+	<button id="hid">Hide Odd</button>
+	<button id="sho">Show All</button>
+  </body>
+</html>
