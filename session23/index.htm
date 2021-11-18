@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALL ABOUT TINGXUAN</title>
+    <link rel="stylesheet" href="onemore.css" type="text/css"/>
+</head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideDown("slow");
+  });
+});
+
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    $("#test1").text("Actually I am also a foodie!!");
+  });
+});
+
+$(document).ready(function(){
+  $("#btn2").click(function(){
+    $("#panel").remove();
+  });
+});
+
+$(document).ready(function(){
+  $("#btn3").click(function(){
+    $("#redb").addClass("important");
+  });
+});
+
+$(document).ready(function(){
+  $("#btn4").click(function(){
+    $("#ani").animate({right: '200px'});
+  });
+});
+
+$(document).ready(function(){
+  $("#btn5").click(function(){
+    $("#div1").delay("slow").fadeIn();
+    $("#div2").delay("fast").fadeIn();
+    $("#div3").delay(800).fadeIn();
+  });
+});
+
+</script>
+
+<style>
+#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: pink;
+  border: solid 1px #c3c3c3;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+
+.important {
+  font-weight: bold;
+  font-size: x-large;
+  color: cornflowerblue;
+}
+
+
+
+</style>
+
+<body>
+    <h1 style="border-style: dotted;"> Greeting Section </h1>
+    <p><img src="mypic.jpg" alt="picture of me" width="400"/><b>Hi, it's really nice to meet you here. </b><br></p>
+    <p style="color: pink"></p>
+    <p class="mys">I am Tingxuan, and I go by Chris. <br></p>
+    <div id="flip">Click to know more about me </div>
+    <div id="panel">
+    <p>I was born in Shanghai,and stayed there for more than 16 years. 
+     Shanghai is an open-minded city, the culture is diverse.I love the city so much.</p>
+    <p>For me, I love travelling a lot, and what's fun is that I have stayed in the hotel in a zoo for one night in South Africa.</p>
+    <p id="test1">I love trying all interetsing things, I love hands on experiences. I love reading novels, going to museums...</p>
+    <button id="btn1">Click to know more...</button>
+    <button id="btn2">Don't want to know anymore</button>
+    </div>
+    <p class="redb" id="redb">Go to <span style="color: royalblue;"><a href="interests.htm">Interests</a></span> to check more about my interests. </p>
+    <button id="btn3">If you want to know further more...(class effect)</button>
+    <button id="btn4">Start Animation if you don't want to see my face</button>
+    <button id="btn5">Click to see the color I love in squares</button>
+    <div id="ani" style="background:pink;height:100px;width:100px;position:absolute;">Hi</div>
+    <div id="div1" style="width:90px;height:90px;display:none;background-color:pink"></div><br>
+    <div id="div2" style="width:90px;height:90px;display:none;background-color:blanchedalmond;"></div><br>
+    <div id="div3" style="width:90px;height:90px;display:none;background-color:palevioletred;"></div><br>
+    <hr>
+
+    
+</body>
+</html>
+
