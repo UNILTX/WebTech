@@ -15,6 +15,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;1,400;1,600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;1,400;1,600&family=Indie+Flower&display=swap" rel="stylesheet">
 
+<script>
+    $(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideDown("slow");
+  });
+});
+
+</script>
 </head>
 <body>
 
@@ -61,24 +69,28 @@
 </div>
 <div class="cul">
     <hr>
-    <h1>Origins of Shanghai Culture</h1>
+    <div id="flip"><h1>Origins of Shanghai Culture</h1></div>
     <hr>
+    <div id="panel">
     <p>The culture of Shanghai is called "Haipai(海派) culture". Its essence is the reference to European and American culture. <br>
         Shanghai culture is a unique cultural phenomenon of Shanghai, which is gradually formed on the basis of the traditional culture of South of the Yangtze River (Wuyue culture) and the integration of modern 
         industrial civilization from Europe and America which has far-reaching influence on Shanghai.</p>
-
+    </div>
         <hr>
-    <h1>Language</h1>
+    <div id="flip"><h1>Language</h1></div>
     <hr>
+    <div id="panel">
     <p>The local language of Shanghai is Shanghainese. When I was very young, there were many teachers in the school who taught in Shanghainese. But as Mandarin was promoted across China a decade ago, fewer and fewer Shanghai children can speak it proficiently. This is also a necessity due to the introduction of non-native populations. 
         But I speak Shanghainese at home with my family, and I think it's also important to carry on the culture and the language.<br>
 
         「The audio on this page are Shanghai dialect songs by Shanghai rapper Keyso Shou, telling two love stories of two different generations of Shanghainese.」<br>
         If you only speaks English, there's no worries! Shanghai is a diverse city, and there're lots of instructions in English. </p>
-
-        <hr>
-    <h1>Life Style</h1>
+    </div>
+    
     <hr>
+    <div id="flip"><h1>Life Style</h1></div>
+    <hr>
+    <div id="panel">
     <P>The pace of life in Shanghai is very fast, everyone living in Shanghai is in a hurry, rarely in Shanghai to see someone living a slow pace of life, ordinary people are working hard for life.<br>
         Although usually busy, shanghainese are extremely capable of enjoying life when they are free, even if the enjoyment is just sitting alone in a room with scented candles burning.<br>
         Besides, Shanghai is a well-behaved city, which is especially safe. Most people maintain a friendly attitude.</P>

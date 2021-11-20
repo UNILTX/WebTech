@@ -13,7 +13,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Monoton&family=Playfair+Display&display=swap" rel="stylesheet">
 
+<script>
+    	function processForm()
+        
+	{
+    if (document.getElementById("namer").value == "")
+        {alert("Name is required. Thank you.");
+    }
+    
+	else if (document.getElementById("emailr").value == "")
+		{alert("Email is required. Thank you.");
+
+    }   
+    else if (document.getElementById("mes").value == "")
+	{alert("Please write your question or thoughts in the messenge box. Thank you.");
+	}
+    else {
+		return true;
+	}
+	    return false;
+	}
+</script>
+
+
+
+
 </head>
+
+
+
 <body>
 
 <section class="lay">
@@ -49,15 +77,15 @@
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 <div class="feedback">
-<form action="mailer.php">
+<form action="mailer.php" onsubmit="return processForm()">
         <h2>MAILBOX</h2>	
         <p> Hope you love my website! If you are willing to know more about Shanghai, please no hesitate to contact with me! </p>
-        <label class="input-block"><input type="text" name="name" value="" placeholder="Name (required)"></label>	<br><br>
-		<label class="input-block"><input type="text" name="email" value="" placeholder="Email (required)" ></label><br>	
+        <label class="input-block"><input type="text" name="name" value="" id="namer" placeholder="Name (required)"></label>	<br><br>
+		<label class="input-block"><input type="text" name="email" value="" id="emailr" placeholder="Email (required)" ></label><br>	
         <p> Are you planning to visit Shanghai?: Yes <input type="radio" name="Plan to visit" value="Yes" />
             No <input type="radio" name="Not plan to visit" value="No"/></p>
         <br><br>
-		<label class="input-bloc"><textarea name="comments" placeholder="Message (required)"  rows="5" cols="30"></textarea></label><br><br>
+		<label class="input-bloc"><textarea name="comments" placeholder="Message (required)"  rows="5" cols="30"  id="mes"></textarea></label><br><br>
         <label class="input-block">Does this website somehow help you? <select name="Your Answer"><option value="Yes">Yes</option><option value="No">No</option></select></label>
             <br><br>
         <br class="clear">

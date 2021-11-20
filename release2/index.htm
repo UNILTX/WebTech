@@ -26,13 +26,56 @@
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;1,400;1,600&family=Indie+Flower&display=swap" rel="stylesheet">
 
 </head>
-<body>
+
+<script>
+
+var timer=null;
+ 
+function startAnimation() {
+    if (!timer) timer = setInterval("changetext()",1200);
+     }
+function changetext() {
+    var myH1 = document.getElementById("ani");
+    if (myH1.innerText == "Hello! Welcome to Shanghai!") myH1.innerText="Hope You Will Like This City.";
+    else myH1.innerHTML= "Hello! Welcome to Shanghai!" 
+};
+
+function chgcolo() {
+    var myH2 = document.getElementById("tit");
+    myH2.style.color="slateblue";
+};
+
+
+
+var phraseList = new Array(" Hello   = nǐ hǎo 你好   ", " Thank you   =  xiè xie 谢谢", " Delicious  = hǎo chī 好吃", " Good Bye   = zài jiàn 再见", " Shanghai  = Shàng hǎi 上海", " What  = shén me 什么"," Good  = hǎo 好")
+
+	   function playCoolSayings()
+	   {
+			var myp = document.getElementById("phrase1")
+			var counter = Math.floor(Math.random()*(phraseList.length))
+			myp.innerHTML= phraseList[counter]
+	   }
+
+
+// <![CDATA[  
+var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));  
+	if (mobile) {  
+        	document.location="mcatch.htm"
+	}
+	// ]]>
+    
+</script>
+
+<body onload="startAnimation()" >
+
 
     <!-- ***************** - Header - ***************** -->
 <section class="lay">
 <!--/ #logo-->
  <div class="logo">
-        <h1>Travel to Shanghai</h1>
+        <h1  onmouseover="chgcolo()" >Travel to <span id="tit">Shanghai<span><img src="shanghainoco.png" style="float:right;padding:auto;"></h1>
+        <h2  onclick="playCoolSayings()" style="font-size: 28pt;"> Click to Learn Some Chinese</h2>
+        <h2 id="phrase1"></h2>
 </div>
 
 <!--/ #navigation-->	
@@ -64,7 +107,7 @@
 <iframe class="shang" src="https://www.youtube.com/embed/kI3Oc-sxSoA" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
 <br><br>
 <hr>
-<h3> "   Hello! Welcome to Shanghai.  "</h3>
+<h3> "    <span id="ani">Hello! Welcome to Shanghai!</span>    "</h3>
 <hr>
 <br>
 
