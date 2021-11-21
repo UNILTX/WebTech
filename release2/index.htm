@@ -4,7 +4,18 @@
 <!-- list items is in the snack page -->
 <!-- hotspot is in the Xintiandi page -->
 
+
 <!-- Release 1 revise : The SEO is added to each page , The checkbox is added to the contact page-->
+<!-- JS: change style: when mouse over the Shanghai in the logo of index page, it will change to blue -->
+<!-- JS: change text: On the index page, when click the first paragraph, it will change text to 'Thank you for reading ' -->
+<!-- JS: change image: when mouse roll over/roll-out the logo of shanghai png on the index page, the image will change-->
+<!-- JS: animation: the text "hello!welcome to shanghai" on the index page will change to "Hope you like this city", and switch  -->
+<!-- JS: random: On the logo sector of index page, click "learn some chinese" and the random chinese character, phonetic and meaning will appear  -->
+<!-- JS: form valid: On the contact page, user must input the name,email and comment to send the form -->
+<!-- JQ: hide: On the index page, the paragraph will disapper if click on it -->
+<!-- JQ: mouseover/mouseout: On the culture page, the dot broder will show around the paragraph if the mouse move on it -->
+<!-- JQ: text: On the food page, click the button and the food I like will appear below. -->
+<!-- JQ: slidedown: On the "About Me" page, there's a panel shows click to know more about me  -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -62,6 +73,9 @@ function Chgback(){
     document.getElementById("shanp").src="shanghainoco.png";
 }
 
+function chgtext(){
+    document.getElementById("js").innerHTML= "Thank you for reading.";
+}
 
 
 var phraseList = new Array(" Hello   = nǐ hǎo 你好   ", " Thank you   =  xiè xie 谢谢", " Delicious  = hǎo chī 好吃", " Good Bye   = zài jiàn 再见", " Shanghai  = Shàng hǎi 上海", " What  = shén me 什么"," Good  = hǎo 好")
@@ -82,13 +96,6 @@ var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(
 	// ]]>
 
 
-
-	// <![CDATA[  
-    var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));  
-	if (mobile) {  
-        	document.location="projectMobile.htm"
-	}
-	// ]]>
 </script>
 
 <body onload="startAnimation()" >
@@ -138,7 +145,7 @@ var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(
 <br>
 
 <div class="p2">
-    <p>Click each paragraph after you read to hide the content.</p>
+    <p2 id="js" onclick="chgtext()"> Click this sentence if you finished reading. 「Click each paragraph after you read to hide the content.」 </p2>
     <p>Shanghai is the economic center of China as well as an international metropolis. It's also where I grew up.</p>
     <p>The city has its own unique charm and has nurtured many unique cultures of its own. What you see on the YouTube video above is Shanghai today, brightly lit and modern. But it might be unbelivable that the CBD of Shanghai in the opening part of the video was flat only a few decades ago. 
     It is such a rapidly developing and culturally settled city that attracts many tourists and dreamers.</p>
