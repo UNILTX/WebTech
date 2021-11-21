@@ -15,6 +15,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;1,400;1,600&family=Indie+Flower&display=swap" rel="stylesheet">
 
 </head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideDown("slow");
+  });
+});
+</script>
+
+<style>
+    #panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: pink;
+  border: solid 1px #c3c3c3;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+</style>
+
+
 <body>
 
     <section class="lay">
@@ -52,6 +76,8 @@
     <td colspan="1"><img src="mypic.jpg" alt="picture of me" class="mypic"/></td>
     <td><p>Hi, it's really nice to meet you here. </p>
     <p class="mys">I am Tingxuan Li, and I go by Chris. <br></p>
+    <div id="flip">Click to know more about me </div>
+    <div id="panel">
     <p>I was born in Shanghai,and stayed there for more than 16 years. 
      Shanghai is an open-minded city, the culture is diverse. </p>
     <p>For me, I love travelling a lot, and what's fun is that I have stayed in the hotel in a zoo for one night in South Africa.</p>
@@ -59,6 +85,7 @@
     <p>Eventhough I have been to so many places, Shanghai still rank NO.1 city in my heart. I love almost everything in that city. If there's any chance, I would recommend you to go.
     My love to Shanghai inspired me to develop this website, and hope this website makes you feel my enthusiasm to the city.
     </p><br>
+    </div>  
 
     <p class="redb">「Go to <span style="color:lightcoral;"><a href="contact.htm">Contact</a></span> if you would like to contact with me. 」</p>
     

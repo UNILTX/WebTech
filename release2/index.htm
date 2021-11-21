@@ -27,7 +27,13 @@
 
 </head>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
+$(document).ready(function(){
+  $("p").click(function(){
+    $(this).hide();
+  });
+});
 
 var timer=null;
  
@@ -46,6 +52,17 @@ function chgcolo() {
 };
 
 
+function chgpic() {
+    document.getElementById("shanp").src="shanghaicolor.png";
+
+}  
+
+function Chgback(){
+
+    document.getElementById("shanp").src="shanghainoco.png";
+}
+
+
 
 var phraseList = new Array(" Hello   = nǐ hǎo 你好   ", " Thank you   =  xiè xie 谢谢", " Delicious  = hǎo chī 好吃", " Good Bye   = zài jiàn 再见", " Shanghai  = Shàng hǎi 上海", " What  = shén me 什么"," Good  = hǎo 好")
 
@@ -60,10 +77,14 @@ var phraseList = new Array(" Hello   = nǐ hǎo 你好   ", " Thank you   =  xi�
 // <![CDATA[  
 var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));  
 	if (mobile) {  
-        	document.location="mcatch.htm"
+        	document.location="projectMobile.htm"
 	}
 	// ]]>
-    
+
+
+
+
+
 </script>
 
 <body onload="startAnimation()" >
@@ -73,9 +94,10 @@ var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(
 <section class="lay">
 <!--/ #logo-->
  <div class="logo">
-        <h1  onmouseover="chgcolo()" >Travel to <span id="tit">Shanghai<span><img src="shanghainoco.png" style="float:right;padding:auto;"></h1>
+        <h1  onmouseover="chgcolo()" >Travel to <span id="tit">Shanghai<span><img src="shanghainoco.png" style="float:right;padding:auto;" onmouseover="chgpic()" onmouseout="Chgback()" id="shanp"></h1>
         <h2  onclick="playCoolSayings()" style="font-size: 28pt;"> Click to Learn Some Chinese</h2>
-        <h2 id="phrase1"></h2>
+        <h2 id="phrase1"></h2><br>
+        <p style="text-align: center; font-size:20pt;"><a href="credit.htm"> Link To Credit Page</a></p>
 </div>
 
 <!--/ #navigation-->	
@@ -112,12 +134,13 @@ var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(
 <br>
 
 <div class="p2">
-    Shanghai is the economic center of China as well as an international metropolis. It's also where I grew up.
-    <br><br> The city has its own unique charm and has nurtured many unique cultures of its own. What you see on the YouTube video above is Shanghai today, brightly lit and modern. But it might be unbelivable that the CBD of Shanghai in the opening part of the video was flat only a few decades ago. 
-    It is such a rapidly developing and culturally settled city that attracts many tourists and dreamers.
-   <br><br>
-    I'm glad to share with you some tips on visiting the city on this website. 
-    Next, I will introduce you to the development history and culture of Shanghai. If you want to visit Or live in Shanghai for a long time, I will give you more information about accommodation, eating habits and recommended restaurants, as well as some interesting places to visit in addition to the ones that everyone recommends online.
+    <p>Click each paragraph after you read to hide the content.</p>
+    <p>Shanghai is the economic center of China as well as an international metropolis. It's also where I grew up.</p>
+    <p>The city has its own unique charm and has nurtured many unique cultures of its own. What you see on the YouTube video above is Shanghai today, brightly lit and modern. But it might be unbelivable that the CBD of Shanghai in the opening part of the video was flat only a few decades ago. 
+    It is such a rapidly developing and culturally settled city that attracts many tourists and dreamers.</p>
+
+<p>I'm glad to share with you some tips on visiting the city on this website. </p>
+<p>Next, I will introduce you to the development history and culture of Shanghai. If you want to visit Or live in Shanghai for a long time, I will give you more information about accommodation, eating habits and recommended restaurants, as well as some interesting places to visit in addition to the ones that everyone recommends online.</p>
 </div>
 
 </section>

@@ -15,15 +15,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;1,400;1,600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;1,400;1,600&family=Indie+Flower&display=swap" rel="stylesheet">
 
-<script>
-    $(document).ready(function(){
-  $("#flip").click(function(){
-    $("#panel").slideDown("slow");
-  });
-});
 
-</script>
 </head>
+
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<script>
+$(function(){ 
+    $('p').mouseover(function(){
+        $(this).css("border","3px dotted coral")
+    })
+    $('p').mouseout(function(){
+        $(this).css("border","none");
+
+})
+});
+</script>
+
 <body>
 
     <!-- ***************** - Header - ***************** -->

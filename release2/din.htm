@@ -19,6 +19,14 @@
 </head>
 <body>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+  $("#btn1").click(function(){
+    $("#test1").text("Actually I love all Shanghainese food!");
+  });
+});
+</script>
     <!-- ***************** - Header - ***************** -->
 <section class="lay">
 <!--/ #logo-->
@@ -66,6 +74,9 @@ Breakfast and dinner also vary. In the past, some varieties were available only 
 So I divide the "food" here into <span><a href="snack.htm">Snacks</a></span> (usually for breakfast) and <span><a href="formal.htm">Cuisine</a></span>(usually for dinner), I hope you will not miss any chance to taste the delicious.
 
     </p> 
+
+<button id="btn1">Click to know what is my favorite food...</button><p id="test1"></p>
+
 
 </div>
 
