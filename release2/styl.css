@@ -23,7 +23,8 @@ p {font-size:13pt; text-indent:15pt}
 
 /* Index */
 .shang{padding-top: 70px; width: 920px; padding-left:30px;height:400px;} 
-.p2 p{ font-family:'Indie Flower', cursive;font-size: 16pt;line-height: 1cm;color:saddlebrown;text-indent:none;}
+.p2{ font-family:'Indie Flower', cursive;font-size: 16pt;line-height: 1cm;color:saddlebrown;text-indent:none;}
+p{ font-family:'Indie Flower', cursive;font-size: 16pt;line-height: 1cm;color:saddlebrown;text-indent:none;}}
 hr{border-style: dotted;size: 18pt;}
 h3{font-size: 28pt;color:maroon;font-family: 'Indie Flower', cursive;text-align: center;}
 iframe{border-style: none;}

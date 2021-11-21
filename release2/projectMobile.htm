@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="visitingshanghai" content="shanghai visiting guide, tourism,introduction to shanghai culture and history">
+    <title>Visiting Shanghai,China</title>
+    <meta name="description" content="This is the page to introduce about shanghai. Shanghai is the economic center of China as well as an international metropolis. It's also where I grew up.
+    <br><br> The city has its own unique charm and has nurtured many unique cultures of its own. What you see on the YouTube video above is Shanghai today, brightly lit and modern. But it might be unbelivable that the CBD of Shanghai in the opening part of the video was flat only a few decades ago.  ">
+    <meta name="keywords" content="shanghai,travel to shanghai, go to shanghai">
+    <meta name="author" content="Tingxuan Li">
+    
+
+    <link rel="stylesheet" href="styl.css" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Monoton&family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;1,400;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;1,400;1,600&family=Indie+Flower&display=swap" rel="stylesheet">
+
+</head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("p").click(function(){
+    $(this).hide();
+  });
+});
+
+var timer=null;
+ 
+function startAnimation() {
+    if (!timer) timer = setInterval("changetext()",1200);
+     }
+function changetext() {
+    var myH1 = document.getElementById("ani");
+    if (myH1.innerText == "Hello! Welcome to Shanghai!") myH1.innerText="Hope You Will Like This City.";
+    else myH1.innerHTML= "Hello! Welcome to Shanghai!" 
+};
+
+function chgcolo() {
+    var myH2 = document.getElementById("tit");
+    myH2.style.color="slateblue";
+};
+
+
+function chgpic() {
+    document.getElementById("shanp").src="shanghaicolor.png";
+
+}  
+
+function Chgback(){
+
+    document.getElementById("shanp").src="shanghainoco.png";
+}
+
+
+
+var phraseList = new Array(" Hello   = nǐ hǎo 你好   ", " Thank you   =  xiè xie 谢谢", " Delicious  = hǎo chī 好吃", " Good Bye   = zài jiàn 再见", " Shanghai  = Shàng hǎi 上海", " What  = shén me 什么"," Good  = hǎo 好")
+
+	   function playCoolSayings()
+	   {
+			var myp = document.getElementById("phrase1")
+			var counter = Math.floor(Math.random()*(phraseList.length))
+			myp.innerHTML= phraseList[counter]
+	   }
+
+
+// <![CDATA[  
+var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));  
+	if (mobile) {  
+        	document.location="projectMobile.htm"
+	}
+	// ]]>
+
+
+
+
+
+</script>
+
+<body onload="startAnimation()" >
+
+
+    <!-- ***************** - Header - ***************** -->
+<section class="lay">
+<!--/ #logo-->
+ <div class="logo">
+        <h1  onmouseover="chgcolo()" >Travel to <span id="tit">Shanghai<span><img src="shanghainoco.png" style="float:right;padding:auto;" onmouseover="chgpic()" onmouseout="Chgback()" id="shanp"></h1>
+        <h2  onclick="playCoolSayings()" style="font-size: 28pt;"> Click to Learn Some Chinese</h2>
+        <h2 id="phrase1"></h2><br>
+        <p style="text-align: center; font-size:20pt;"><a href="credit.htm"> Link To Credit Page</a></p>
+</div>
+
+<!--/ #navigation-->	
+<br>	
+<div class="nav">
+    <a href="index.htm">Home</a>
+    <a href="history.htm">History</a>
+    <a href="culture.htm">Culture</a>
+    <a href="Accomo.htm">Accomodation</a>
+    <div class="navbar">
+    <a class="button" href="togo.htm">Places<i class="fa fa-caret-down"></i></a><br><br><br>
+        <div class="navbarcontent">
+            <a href="bund.htm">The Bund</a>
+            <a href="xintiandi.htm">Xin Tian Di</a>
+            <a href="Jinan.htm">JinAn Temple</a>
+        </div>
+    </div>		
+    <div class="navbar">
+        <a class="button" href="din.htm">Food<i class="fa fa-caret-down"></i></a><br><br><br>
+        <div class="navbarcontent">		
+            <a href="snack.htm">Shanghai Snacks</a>
+            <a href="formal.htm">Shanghai Cuisine</a>
+         </div>
+    </div>	
+    <a href="Aboutme.htm">About Me</a>
+    <a href="contact.htm">Contact</a> 
+</div>
+<br><br><br><br><br><br><br><br><br>
+<iframe class="shang" src="https://www.youtube.com/embed/kI3Oc-sxSoA" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+<br><br>
+<hr>
+<h3> "    <span id="ani">Hello! Welcome to Shanghai!</span>    "</h3>
+<hr>
+<br>
+
+<div class="p2">
+    <p>Click each paragraph after you read to hide the content.</p>
+    <p>Shanghai is the economic center of China as well as an international metropolis. It's also where I grew up.</p>
+    <p>The city has its own unique charm and has nurtured many unique cultures of its own. What you see on the YouTube video above is Shanghai today, brightly lit and modern. But it might be unbelivable that the CBD of Shanghai in the opening part of the video was flat only a few decades ago. 
+    It is such a rapidly developing and culturally settled city that attracts many tourists and dreamers.</p>
+
+<p>I'm glad to share with you some tips on visiting the city on this website. </p>
+<p>Next, I will introduce you to the development history and culture of Shanghai. If you want to visit Or live in Shanghai for a long time, I will give you more information about accommodation, eating habits and recommended restaurants, as well as some interesting places to visit in addition to the ones that everyone recommends online.</p>
+</div>
+
+</section>
+
+</body>
+</html>
